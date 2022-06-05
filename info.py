@@ -5,7 +5,9 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     return "Erick Alexander Alvarado Guerra - 201800546"
-
+@app.route("/hi")
+def hi():
+    return "Hi"
 
 if __name__ == '__main__':
     app.run(host="localhost", port=4000, debug=True)
